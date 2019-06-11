@@ -1,0 +1,270 @@
+
+/*轮播图*/
+.banner{
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+.banner .item{
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:100;
+}
+.banner .item>a{
+    display: inline-block;
+    width: 100%;
+}
+.banner .item>a>img{
+    width: 100%;
+    height: auto;
+}
+/*产品中心*/
+.product{
+    font-size: 0;
+}
+.product a{
+    display: inline-block;
+
+}
+
+.content h2{
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.product a:hover{
+    text-decoration: none;
+}
+.product a:hover .product_show{
+    border-color: red;
+}
+.product_show{
+    border:1px solid #ddd;
+}
+.product a>p{
+    font-size: 1rem !important;
+}
+.product p{
+    margin: 0.5rem 0;
+}
+.product_show p{
+    text-align: center;
+
+}
+
+/*解决方法*/
+
+.solve>div{
+    background: #eee;
+}
+
+.solve_info>h3{
+    display: inline-block;
+   font-size: 1.2rem;
+    color:#fff;
+    background-color:darkblue;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
+.solve_info p{
+    line-height: 1.5rem;
+    font-size: 0.7rem;
+}
+/**/
+
+.about_news p{
+    margin: 0.5rem 0;
+}
+.about_news>div{
+    border:1px solid #ddd;
+}
+.about_news>div>.lf{
+    padding: 1rem 1rem 0 1rem;
+}
+.about_news>div span{
+    font-size: 1.2rem;
+}
+.about_news>div p{
+    font-size: 0.8rem;
+}
+.about_news>div p>a{
+    display: block;
+     color:#aaa;
+     margin-top: 0.4rem;
+    font-size: 0.7rem;
+ }
+.about_news>div p>a:hover{
+    color:#555;
+    text-decoration: none;
+}
+/**/
+.bottom_img{
+    position: relative;
+    height: 425px;
+    overflow: hidden;
+}
+
+
+/**/
+.contact{
+    padding: 1rem;
+}
+.contact>img{
+    margin-right: 1rem;
+}
+.contact span{
+    margin-right: 1rem;
+}
+.adress,.phone{
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width:769px){
+    .product a{
+        width: 22.5%;
+        margin-right: 2%;
+    }
+    .product a:first-child{
+        margin-left: 2%;
+    }
+    .bottom_img{
+        height: 425px;
+    }
+
+}
+@media screen and (min-width: 992px){
+    .solve>div{
+        padding:1rem 2%;
+    }
+    .solve_img{
+        float:left;
+        width: 65%;
+    }
+    .solve_info{
+        float: right;
+        width: 33%;
+        font-size: 0.8rem;
+    }
+    .about_news>div{
+        width: 49%;
+    }
+    .about_news{
+        padding: 3rem 2%;
+    }
+    .about{
+        float:left;
+    }
+    .news_index{
+        float:right;
+    }
+    .about_news>div>.lf{
+        width: 50%;
+    }
+    .about_news>div>.rf {
+        width: 50%;
+    }
+    .product_show p{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 991px){
+    .solve_img{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .about_news>div.about{
+        margin-bottom: 2rem;
+    }
+    .about_news{
+        padding: 3rem 0;
+    }
+    .about_news>div>.lf{
+        width: 40%;
+    }
+    .about_news>div{
+        width:590px ;
+        margin: 0 auto;
+    }
+    .add_tel{
+        display: inline-block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .product_show p{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .product>div{
+        text-align: center;
+    }
+    .product>div a:nth-child(2n+1){
+        margin-right: 0.3rem;
+    }
+    .product img{
+        margin: 0;
+    }
+    .solve>div{
+        padding:1rem 0;
+    }
+    .solve_info{
+        padding: 0 2%;
+    }
+    .bottom_img{
+        height:300px;
+    }
+    .product_show p{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (min-width:769px) and (max-width:991px){
+    .product a>p{
+        font-size: 0.8rem;
+    }
+    .product_show p{
+        font-size: 0.6rem;
+    }
+    .solve>div{
+        padding:1rem 2%;
+    }
+}
+@media screen and (max-width: 570px){
+    .fanyi>a{
+        font-size: 0.6rem;
+    }
+    .product>div a:nth-child(2n+1){
+        margin-right: 0;
+    }
+    .bottom_img{
+        height:140px ;
+    }
+    .contact>img{
+        display: none;
+    }
+    .add_tel>span{
+        display: inline-block;
+        width: 100%;
+    }
+    .phone{
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 606px){
+    .about_news>div>div.rf{
+        display: none;
+    }
+    .about_news>div{
+        width: 250px;
+        height: 214px;
+        margin: 0 auto;
+    }
+    .about_news>div>div.lf{
+        width: 100%;
+    }
+}
+
+

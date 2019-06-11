@@ -1,0 +1,396 @@
+body{
+   font:14px arial;
+}
+/*信息介绍*/
+.info{
+    background: url(../img/a.jpg) no-repeat;
+    padding:3em 0;
+    background-size:cover;
+}
+.info-right{
+    color:#fff;
+    padding-left:4em;
+}
+.info-right>h1{
+    border-bottom:1px solid #fff;
+    padding:1em 0;
+    letter-spacing: 1em;
+}
+.info-right li{
+    font-size:1.2em;
+    padding-bottom: 1em;
+}
+.info-right li>b{
+    padding-right: 5%;
+}
+.info-left{
+    width: 200px;
+    height: 200px;
+    perspective: 400px;
+    -webkit-perspective:400px;
+    vertical-align: middle;
+}
+.headImgs{
+    position: relative;
+    transform-style:preserve-3d;
+    animation: mupiao 5s infinite linear running;
+    transform-origin: center 100px -100px;
+}
+.headImgs>div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50px;
+    border: 1px solid white;
+    transform-origin: center center -100px;
+}
+.headImgs div:nth-of-type(1){
+    transform: rotateY(0deg);
+}
+.headImgs div:nth-of-type(2){
+    transform: rotateY(90deg);
+}
+.headImgs div:nth-of-type(3){
+    transform: rotateY(180deg);
+}
+.headImgs div:nth-of-type(4){
+    transform: rotateY(270deg);
+}
+
+@keyframes mupiao{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(-360deg);
+    }
+}
+/*导航条*/
+@media (max-width: 767px) {
+    .navbar-toggle{
+        float:none;
+        color:#fff;
+    }
+
+}
+@media (min-width: 768px) {
+    .navbar-nav{
+        width:100%;
+    }
+    .navbar-nav>li{
+        text-align: center;
+        width:25%;
+    }
+}
+.navbar{
+    background: #337ab7;
+    text-align: center;
+    font-size:1.1em;
+    margin: 0;
+}
+.navbar-nav>li{
+    padding: 0.2em 2em;
+}
+.navbar-nav a{
+    color:#fff;
+}
+.navbar-nav a.action{
+    animation: scaleChange .8s;
+}
+.navbar-nav a:hover{
+    font-size:0.8em;
+    color:#337ab7;
+}
+@keyframes scaleChange{
+    0% {
+        transform: scale(0);
+    }
+    50% {
+    transform: scale(.5);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+
+
+/*工作经历*/
+#work{
+    background: #000;
+}
+#work h1,#education h1,#skills h1,#project h1{
+    color:#337ab7;
+    text-align: center;
+    padding:0.3em 0;
+    border-bottom: 1px solid #8a6d3b;
+    font-size: 4em;
+    margin-bottom: 2px;
+}
+.work_detail,.education_detail,.skills_detail,.project_detail{
+    border-top: 1px solid #8a6d3b;
+    padding:2em 0;
+    text-align: center;
+}
+.work_detail h4{
+    display: inline-block;
+    background:#337ab7;
+    padding: 0.5em 1em;
+    color:#fff;
+}
+
+.work_detail .row{
+    overflow: hidden;
+}
+.work_time{
+    padding:1em 4em  2em 4em;
+    min-width: 17em;
+    position: relative;
+    text-align: left;
+}
+.work_time_left{
+    text-align: right;
+}
+.work_time_right{
+    float:right;
+    height: 100%;
+    min-height: 19rem;
+    border-left:1px solid #fff ;
+}
+.work_time>span{
+    display: inline-block;
+    border: 0.8em solid transparent;
+    position: absolute;
+    top:2.2em;
+}
+
+.work_time_left>span{
+    border-left: 0.8em solid #337ab7;
+}
+.work_time_right>span{
+    border-right: 0.8em solid #337ab7;
+    left:2.5em;
+}
+.work_type{
+    padding:1em 4em  2em 4em;
+    border-left: 1px solid #fff;
+    position: relative;
+}
+.work_type>h5 b{
+    display: inline-block;
+    padding: 1em;
+    color:#ffff00;
+    border:1px solid #ffff00;
+}
+.work_type_left{
+    text-align: right;
+    border:none;
+    float:left;
+
+}
+.work_type>div{
+    color:#fff;
+}
+.work_type span.glyphicon{
+    padding: 1.5em;
+    border-radius: 50%;
+    background: #337ab7;
+    color:#fff;
+    position: absolute;
+    top:1em;
+}
+.work_type_left span.glyphicon{
+    right:-2em;
+}
+.work_type_right span.glyphicon{
+    left:-2em;
+}
+
+@media (max-width:492px){
+    .work_detail .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .work_time{
+        width: 100%;
+        text-align: left;
+        padding-left:0;
+    }
+    .work_type{
+        width: 100%;
+        text-align: left;
+        border:none;
+    }
+    .work_type_left{
+        padding-left:0;
+    }
+    .work_type span.glyphicon {
+        padding: 1em;
+    }
+    .work_type_left span.glyphicon{
+        right:0;
+        top:2em;
+    }
+    .work_type_right span.glyphicon{
+        left:0;
+        top:2em;
+    }
+    .work_time_right{
+        padding-left:0.8em;
+        border:none;
+    }
+    .work_time_right>span{
+        left:-0.8em;
+    }
+
+    .skills_detail div{
+        width:100%;
+    }
+}
+/*教育经历*/
+.education_detail div.row{
+    margin-left:0;
+    margin-right:0;
+}
+.school{
+    height:20em;
+    position: relative;
+}
+.school>img{
+    position: absolute;
+    width:20em;
+    height:15em;
+    box-shadow: 0.2em 0.2em 0.8em #aaa;
+    transition: all .2s;
+    z-index:100;
+}
+.school .photo1{
+    top:0.4em;
+    left:8.4em;
+}
+.school .photo2{
+    top:0.2em;
+    left:8.2em;
+}
+.school .photo3{
+    top:0;
+    left:8em;
+}
+.school .roater{
+    transform: rotate(30deg);
+}
+.school .roatem{
+    transform: rotate(0deg);
+}
+.school .roatel{
+    transform: rotate(-30deg);
+}
+.school img.active{
+    z-index: 1000;
+}
+/*专业技能*/
+.skills_detail .progress{
+    height:1em;
+}
+.skills_detail h4>span{
+    float:right;
+}
+.skills_detail h4{
+    text-align: left;
+}
+.skills_detail .progress-bar{
+    background-color:#67b168;
+}
+/*项目经历*/
+.project_detail .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.project_detail a{
+    display:inline-block;
+    position: relative;
+    width:200px;
+    overflow: hidden;
+    
+}
+.project_detail a img{
+    width:210px;
+    height:auto;
+    margin: 0 auto;
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+}
+.project_detail a:hover img{
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+.project_detail .mask{
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);;
+    display:none;
+    padding: 1rem;
+}
+.project_detail .mask>div{
+    position:relative;
+}
+.project_detail .mask span{
+    position: absolute;
+    left:-100%;
+    width:100%;   
+    height:2px;
+    background: #fff;
+    opacity: 0;
+}
+.project_detail .mask h5{
+    color:#fff;
+}
+.project_detail .mask p{
+    color:#fff;
+    font-size:1rem;
+    position: absolute;
+    right:-110%;
+    padding-top:0.5rem;
+}
+
+.info-right>h1{
+    -webkit-animation: text-animation 5s linear infinite alternate;
+    animation: text-animation 5s linear infinite alternate;
+}
+@-webkit-keyframes text-animation {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+    }
+}
+
+@keyframes text-animation {
+    from {
+        color: white;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+    }
+    to {
+        color: white;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+    }
+}
+
+.work h1,.education h1,.skills h1,.project h1{
+    text-shadow: 0 1px hsl(208,56%,46%),
+    0 2px hsl(208,56%,40%),
+    0 3px hsl(208,56%,35%),
+    0 4px hsl(208,56%,30%),
+    0 5px hsl(208,56%,25%),
+    0 5px 10px hsl(208,56%,20%);
+}

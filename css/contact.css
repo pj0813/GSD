@@ -1,0 +1,23 @@
+.companyMap>div{
+    padding: 0 1rem 2rem;
+}
+.companyMap>div>h3{
+    font-weight: normal;
+    line-height: 2rem;
+}
+.companyMap>div>p{
+    line-height: 2rem;
+}
+#yfzx,#gsd{
+    height:298px;
+}
+.BMap_bubble_title,.BMap_bubble_content{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+@media (max-width: 300px) {
+    .companyMap>div{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

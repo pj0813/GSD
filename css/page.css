@@ -1,0 +1,25 @@
+.page{
+    text-align:center;
+    margin-top:1rem;
+    font-size: 0.7rem;
+    color: #aaaaaa;
+}
+.page .color_type{
+    color:red;
+    margin-right: 0.3rem;
+}
+.page .select_page{
+    margin-left: 1rem;
+}
+.page a{
+    padding:0 0.2rem;
+    cursor: pointer;
+}
+.page span{
+    padding:0 0.2rem;
+}
+@media (max-width: 300px) {
+    .select_page{
+        display: none;
+    }
+}

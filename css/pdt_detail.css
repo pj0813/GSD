@@ -1,0 +1,78 @@
+/*产品详情*/
+.product_detail{
+    line-height: 1.6rem;
+    font-size: 0.8rem;
+}
+.product_detail b{
+    display: block;
+    margin-top:2rem;
+}
+.product_detail>h3{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+.product_img{
+    text-align: center;
+}
+.product_detail>p{
+    text-indent: 1.6rem;
+}
+.product_point>li i{
+    display:inline-block;
+    width: 0.15rem;
+    height: 0.15rem;
+    background-color: #333333;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+}
+.product_point>li span{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #333333;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 0.1rem;
+}
+
+.product_detail table{
+    border-collapse:collapse;
+    width:30rem;
+}
+.product_detail .tab{
+    width:100%;
+    overflow-x:auto;
+}
+.product_detail table td,.product_detail table th{
+    border: 1px solid #000;
+    vertical-align: middle;
+    text-align: center;
+}
+.trouble tr td:last-child{
+    text-align:left;
+}
+.order>thead>tr>td{
+    width:33.33%;
+}
+.skill>thead>tr>td:last-child{
+    width:8rem;
+}
+.app{
+    font-size: 0.6rem;
+    color:#555;
+}
+.app>thead>tr>th{
+    background: #aaa;
+}
+.app>tbody>tr>td{
+    text-align: left;
+}
+.app>thead>tr>th:first-child{
+    width:30%;
+}
+@media (max-width: 767px) {
+    .product_detail{
+        padding: 1rem;
+    }
+}

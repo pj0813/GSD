@@ -1,0 +1,42 @@
+.company_news_detail{
+    font-size: 0.9rem;
+}
+.company_news_detail h3{
+    font-weight: normal;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.news_detail>div{
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+}
+.news_detail>p{
+    line-height: 1.5rem;
+}
+.issue{
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
+.page_up_down{
+    font-size: 0.7rem;
+    margin-top: 3rem;
+}
+.page_up_down p{
+    padding-right: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;/*禁止自动换行*/
+    overflow: hidden;
+    width:16rem ;
+}
+.page_up_down a:hover{
+    color: blue;
+}
+@media (min-width: 500px) {
+    .page_up{
+        float: left;
+    }
+    .page_down{
+        float: right;
+    }
+}
